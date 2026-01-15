@@ -34,14 +34,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_TAB, KC_1, KC_2, KC_3, KC_4, KC_5, _______,        _______, KC_6, KC_7, KC_8, KC_9, KC_0, XXXXXXX,
         KC_ESC, KC_INS, KC_HOME, KC_PGUP, KC_PSCR, XXXXXXX, _______,        _______, KC_LEFT, KC_DOWN, KC_UP,KC_RIGHT, XXXXXXX, KC_ENT,
         OS_CLEAR, KC_DEL, KC_END, KC_PGDN, XXXXXXX, XXXXXXX,        XXXXXXX, XXXXXXX, KC_SPC, OS_CLEAR, KC_BSPC, XXXXXXX,
-        OS_LSFT, OS_LCTL, LLCK_OFF,        QK_LLCK, OS_LGUI, OS_LALT
+        OS_LSFT, OS_LCTL, QK_LLCK,        XXXXXXX, OS_LGUI, OS_LALT
     ),
 
     [_SYM] = LAYOUT(
         KC_GRV, KC_EXLM, KC_AT, KC_HASH, KC_DLR, KC_PERC, _______,        _______, KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN, KC_TILD,
         KC_ESC, KC_LBRC, KC_RBRC, KC_MINS, KC_PLUS, KC_DQUO, _______,        _______, KC_BSLS, KC_SLSH, KC_PIPE, KC_LT, KC_GT, KC_ENT,
         OS_CLEAR, KC_LCBR, KC_RCBR, KC_UNDS, KC_EQL, KC_QUOT,        KC_COMM, KC_DOT, KC_SPC, OS_CLEAR, KC_BSPC, KC_QUES,
-        OS_LSFT, OS_LCTL, QK_LLCK,        LLCK_OFF, OS_LGUI, OS_LALT
+        OS_LSFT, OS_LCTL, XXXXXXX,        QK_LLCK, OS_LGUI, OS_LALT
     ),
 
     [_FN] = LAYOUT(
