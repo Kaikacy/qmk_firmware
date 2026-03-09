@@ -52,12 +52,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
 
-    // TODO: thumbcluster mods
     [_MS] = LAYOUT(
-        KC_TAB, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, TG(_MS),        _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, OS_LALT,
-        OS_LCTL, XXXXXXX, MS_BTN3, MS_BTN1, MS_BTN2, XXXXXXX, _______,        _______, MS_LEFT, MS_DOWN, MS_UP, MS_RGHT, XXXXXXX, OS_LCTL,
-        OS_LSFT, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,        XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, OS_LGUI, OS_LSFT,
-        MS_ACL0, MS_ACL1, MS_ACL2,        XXXXXXX, MO(_MS_WHL), XXXXXXX
+        KC_TAB, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, TG(_MS),        _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+        KC_ESC, XXXXXXX, MS_BTN1, MS_BTN3, MS_BTN2, XXXXXXX, _______,        _______, MS_LEFT, MS_DOWN, MS_UP, MS_RGHT, XXXXXXX, KC_ENT,
+        OS_CLEAR, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,        XXXXXXX, XXXXXXX, KC_SPC, OS_CLEAR, KC_BSPC, XXXXXXX,
+        OS_LSFT, OS_LCTL, MO(_MS_WHL),        XXXXXXX, OS_LGUI, OS_LALT
     ),
     [_MS_WHL] = LAYOUT(
         _______, _______, _______, _______, _______, _______, _______,        _______, _______, _______, _______, _______, _______, _______,
@@ -93,7 +92,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 
 /* RGB indicators */
 
-#define RGB_UNLOCKED RGB_ORANGE
+#define RGB_UNLOCKED RGB_PURPLE
 #define RGB_LOCKED RGB_RED
 
 #define SET_MOD_INDICATOR(row, col, mod_mask)      \
